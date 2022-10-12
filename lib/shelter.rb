@@ -11,8 +11,18 @@ class Shelter
     end
 
     def call_pets
-      pets.each do |pet|
-      pet.insert(-1, "!")
+        pets.each do |pet|
+        pet.insert(-1, "!")
+      end
     end
+
+    def over_capacity?
+      if @pets.count > @capacity
+        true
+      else
+        false
+      end
     end
+
+
 end
