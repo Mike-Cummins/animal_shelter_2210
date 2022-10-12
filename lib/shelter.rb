@@ -24,5 +24,8 @@ class Shelter
       end
     end
 
+    def adopt
+      @pets.shift
+    end
 
 end
