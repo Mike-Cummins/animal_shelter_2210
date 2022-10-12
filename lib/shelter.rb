@@ -9,4 +9,10 @@ class Shelter
     def add_pet(pet)
       @pets << pet
     end
+
+    def call_pets
+      pets.each do |pet|
+      pet.insert(-1, "!")
+    end
+    end
 end
