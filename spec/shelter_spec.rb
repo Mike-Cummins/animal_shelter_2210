@@ -12,13 +12,12 @@ RSpec.describe Shelter do
     end
 
     it 'can read the name' do
-    
+
       shelter = Shelter.new('Denver Animal Shelter', 5)
       expect(shelter.name).to eq('Denver Animal Shelter')
     end
 
     it 'can read the capacity' do
-      skip
 
       shelter = Shelter.new('Denver Animal Shelter', 5)
       expect(shelter.capacity).to eq(5)
