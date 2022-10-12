@@ -24,8 +24,7 @@ RSpec.describe Shelter do
     end
 
     it 'has no pets by default' do
-      skip
-
+      
       shelter = Shelter.new('Denver Animal Shelter', 5)
       expect(shelter.pets).to eq []
     end
